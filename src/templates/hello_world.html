@@ -1,0 +1,160 @@
+{% load staticfiles %}
+<html>
+<head>
+<title>MADIHADA STUDIO</title>
+<link rel="stylesheet" href='{% static "css/style.css" %}'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+<!----NavigationBar---->
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">Madihada</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">맞이하다</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          작품전시관
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">가족사진</a>
+          <a class="dropdown-item" href="#">백일,이백일,돌사진</a>
+          <a class="dropdown-item" href="#">개인사진(컬러증명,프로필)</a>
+          <a class="dropdown-item" href="#">커플사진</a>
+          <a class="dropdown-item" href="#">우정사진</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">가격</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">예약</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">위치</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!-----------Slider----------->
+<div id="slider">
+<div id="headerSlider" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#headerSlider" data-slide-to="1"></li>
+    <li data-target="#headerSlider" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/slider_1.jpg' %}" class="d-block img-fluid">
+      <div class="carousel-caption">
+<!--        <h5>가족사진</h5>-->
+<!--        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/slider_2.jpg' %}" class="d-block img-fluid">
+      <div class="carousel-caption">
+<!--        <h5>돌사진</h5>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/slider_3.jpg' %}" class="d-block img-fluid">
+      <div class="carousel-caption">
+<!--        <h5>커플사진</h5>-->
+<!--        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<!-----------About----------->
+<section id="about">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<h2>맞이하다는</h2>
+<div class="about-content">
+작품 사진을 지향합니다. 감성적이고 완벽한 사진을 완성하기 위해서, 맞이하다는 3가지 특별한 컨셉이있습니다.
+일대일 보정, 수 천명의 고객님 모두 일대일 보정했던 작가의 노하우를 통해 최고의 보정을 약속드립니다.
+시그니처 컬러 배경, 맞이하다만의 감성으로 컨셉과 의상, 고객의 선호에 맞게 색감을 정하여 촬영합니다.
+시즌 별 컨셉을 달리하여 항상 발전되도록 노력하고있습니다.
+</div>
+<button type="button" class="btn btn-primary"> 이동하</button>
+</div>
+<div class="col-md-6"></div>
+</div>
+</div>
+</section>
+</body>
+</html>
+
+
+
+<!-----------Slider----------->
+<div id="second_slider">
+<div id="second_headerSlider" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#second_headerSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#second_headerSlider" data-slide-to="1"></li>
+    <li data-target="#second_headerSlider" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/slider_1.jpg' %}" class="d-block img-fluid">
+      <div class="carousel-caption">
+<!--        <h5>가족사진</h5>-->
+<!--        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/slider_2.jpg' %}" class="d-block img-fluid">
+      <div class="carousel-caption">
+<!--        <h5>돌사진</h5>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/slider_3.jpg' %}" class="d-block img-fluid">
+      <div class="carousel-caption">
+<!--        <h5>커플사진</h5>-->
+<!--        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#second_headerSlider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#second_headerSlider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
